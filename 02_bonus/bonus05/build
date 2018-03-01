@@ -1,0 +1,16 @@
+docker pull alpine
+docker pull debian
+docker pull ruby
+docker pull node
+
+docker build -t dc_ex00 ../../01_dockerfiles/ex00
+docker build -t dc_ex01 ../../01_dockerfiles/ex01
+docker build -t dc_ex02 ../../01_dockerfiles/ex02
+docker build -t dc_ex03 ../../01_dockerfiles/ex03
+
+cd ../bonus01
+docker build -t 42_docker_fillit .
+cd ../bonus02
+docker build -t mc_docker_server .
+cd ../bonus03
+docker build -t yarn_docker_server .
